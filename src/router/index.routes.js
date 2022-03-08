@@ -41,7 +41,7 @@ const routes = [
     ],
   },
   {
-    path: '/:pathMatch(.*)*',
+    path: '/:route(.*)*',
     component: Error,
   },
 ]
