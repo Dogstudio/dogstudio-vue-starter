@@ -3,8 +3,6 @@ import { createApp } from 'vue'
 // Say Hello
 import '@/utils/say-hello'
 
-import * as constants from '@/utils/constants'
-
 // Dependencies
 import i18n from '@/locales'
 import store from '@/store'
