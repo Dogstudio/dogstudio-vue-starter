@@ -5,7 +5,7 @@ import Root from './index.vue'
 import Home from '@@/pages/index.vue'
 import Error from '@@/pages/error.vue'
 
-// Utilities
+// Utils
 import {
   getLocaleCookie,
   getBrowserLocale,

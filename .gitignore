@@ -33,3 +33,6 @@ bark.yml
 
 # Vercel
 .vercel
+
+# Samples
+sample.*

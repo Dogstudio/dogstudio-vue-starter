@@ -1,7 +1,7 @@
 // Vue i18n
-import { createI18n } from 'vue-i18n'
+import { createI18n } from 'vue-i18n/index'
 
-// Utilities
+// Utils
 import { getDefaultLocale, getFallbackLocale } from '@/utils/helpers/language'
 
 // Messages

@@ -5,7 +5,7 @@ import '@/utils/say-hello'
 
 // Dependencies
 import i18n from '@/locales'
-import store from '@/store'
+// import store from '@/store'
 import router from '@/router'
 
 // Application
@@ -19,7 +19,7 @@ const app = createApp(App)
 
 // Tools
 app.use(i18n)
-app.use(store)
+// app.use(store)
 app.use(router)
 
 // Mount

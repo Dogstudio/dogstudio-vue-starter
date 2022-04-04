@@ -6,6 +6,7 @@ export const PROD = import.meta.env.PROD
 
 // Responsive Constants
 export const BREAKPOINTS = {
+  XXXS: 0,
   XXS: 320,
   XS: 450,
   S: 600,

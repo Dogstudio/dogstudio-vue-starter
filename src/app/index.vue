@@ -1,18 +1,32 @@
 <template>
   <main class="site-wrapper">
     <RouterView />
+
+    <template v-if="debug">
+      <Grid />
+    </template>
   </main>
 </template>
 
 <script>
-// Utilities
+// Components
+// -- Partials
+import Grid from '@/components/partials/Grid.vue'
+
+// Utils
 import { setLocaleCookies, setLocaleAttributes } from '@/utils/helpers/language'
 
 export default {
   name: 'App',
+  components: {
+    Grid,
+  },
   computed: {
     mode: function () {
       return import.meta.env.VUE_APP_MODE || 'app'
+    },
+    debug: function () {
+      return import.meta.env.DEV && this.$route.query.debug === 'grid'
     },
   },
   watch: {
@@ -31,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .site-wrapper {
   position: relative;
   overflow-x: hidden;
