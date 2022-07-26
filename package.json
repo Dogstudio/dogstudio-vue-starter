@@ -11,7 +11,7 @@
     "lint": "eslint --ext \".vue,.ts,.js,.tsx,.jsx\" .",
     "build": "vite build",
     "start": "vite preview",
-    "upgrade": "ncu && npm i"
+    "upgrade": "ncu"
   },
   "engineStrict": true,
   "engines": {
