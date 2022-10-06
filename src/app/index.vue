@@ -41,6 +41,18 @@ export default {
   mounted() {
     setLocaleCookies(this.$i18n.locale)
     setLocaleAttributes(this.$i18n.locale)
+
+    // Initial Resize
+    this.onResize()
+
+    // Window Events
+    window.addEventListener('resize', this.onResize)
+  },
+  methods: {
+    onResize() {
+      // prettier-ignore
+      document.documentElement.setAttribute('style', `--real-height: ${window.innerHeight}px`)
+    },
   },
 }
 </script>
