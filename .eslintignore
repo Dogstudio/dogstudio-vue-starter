@@ -1,3 +1,6 @@
+# Vite
+vite.config.js
+
 # Build
 /dist
 /build
@@ -22,3 +25,11 @@ src/vendors/**/*.js
 src/vendors/**/*.tsx
 src/vendors/**/*.jsx
 src/vendors/**/*.vue
+
+# Locales
+src/locales/**/*.ts
+src/locales/**/*.js
+
+# Utilities
+src/utils/helpers/**/*.ts
+src/utils/helpers/**/*.js
