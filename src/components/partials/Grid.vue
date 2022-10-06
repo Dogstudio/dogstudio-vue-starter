@@ -154,6 +154,10 @@ $toolbar-background: #37474f;
       overflow-x: scroll;
       overflow-y: hidden;
       background-color: $toolbar-background;
+
+      [dir='rtl'] & {
+        flex-direction: row-reverse;
+      }
     }
 
     &-item {
@@ -179,6 +183,10 @@ $toolbar-background: #37474f;
         display: flex;
         align-items: center;
         cursor: pointer;
+
+        [dir='rtl'] & {
+          flex-direction: row-reverse;
+        }
 
         &::before {
           content: '';
