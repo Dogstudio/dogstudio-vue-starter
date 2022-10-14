@@ -20,6 +20,12 @@ export default defineConfig(({ mode }) => {
     server: {
       port: process.env.VITE_SERVER_PORT || 3000,
     },
+    // See: https://stackoverflow.com/a/71252262
+    define: {
+      __VUE_I18N_LEGACY_API__: false,
+      __VUE_I18N_FULL_INSTALL__: true,
+      __INTLIFY_PROD_DEVTOOLS__: false,
+    },
     plugins: [vue(), glsl()],
     resolve: {
       alias: {

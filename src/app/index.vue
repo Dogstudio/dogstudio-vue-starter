@@ -14,6 +14,7 @@
 import Grid from '@/components/partials/Grid.vue'
 
 // Utils
+import { DEV } from '@/utils/constants'
 import { setLocaleCookies, setLocaleAttributes } from '@/utils/helpers/language'
 
 export default {
@@ -22,11 +23,11 @@ export default {
     Grid,
   },
   computed: {
-    mode: function () {
+    mode() {
       return import.meta.env.VUE_APP_MODE || 'app'
     },
-    debug: function () {
-      return import.meta.env.DEV && this.$route.query.debug === 'grid'
+    debug() {
+      return DEV && this.$route.query.debug === 'grid'
     },
   },
   watch: {

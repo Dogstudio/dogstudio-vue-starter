@@ -2,6 +2,7 @@
 import UAParser from 'ua-parser-js'
 
 // Environment Constants
+export const DEV = import.meta.env.DEV
 export const PROD = import.meta.env.PROD
 
 // Responsive Constants
